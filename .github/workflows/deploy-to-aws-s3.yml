@@ -3,8 +3,9 @@ name: Deploy Static Website to AWS S3
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on:
-  create:
-    types: [tags]
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   Explore-GitHub-Actions:
