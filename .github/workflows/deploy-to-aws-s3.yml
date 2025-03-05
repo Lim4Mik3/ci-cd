@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on:
   create:
-    types: [tag]
+    types: [tags]
 
 jobs:
   Explore-GitHub-Actions:
